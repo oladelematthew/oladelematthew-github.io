@@ -1,0 +1,475 @@
+body {
+    overflow-x: hidden;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    z-index: 5;
+    background-attachment: scroll;
+    background-image: url('../ASSETS/matthew-oladele-hero.png');
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+}
+
+header .intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+@media(min-width:768px) {
+    header .intro-text {
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+
+    header .intro-text .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+    }
+
+    header .intro-text .intro-heading {
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+    }
+}
+
+section {
+    padding: 100px 0;
+}
+
+section h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+section h3.section-subheading {
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+#viewPortfolio{
+    margin: 10px;
+}
+
+#welcomePortfolio{
+    color: #fff;
+    text-decoration: none;
+}
+
+#welcomePortfolio:hover{
+    color: rgb(26, 26, 26);
+}
+
+@media(min-width:768px) {
+    section {
+        padding: 150px 0;
+    }
+}
+
+#about {
+    padding: 50px;
+    width: 100vw;
+    height: auto;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .roles {
+      font-size: 30px;
+      font-weight: 300;
+      height: 50px;
+      vertical-align: middle;
+      overflow: hidden;
+  }
+  
+  .roles div {
+      height: 50px;
+      transition: margin-top 1s ease-in-out;
+  }
+
+  .aboutText{
+      margin-top: 50px;
+      font-weight: 300;
+      color: rgb(114, 114, 114);
+      margin-bottom: 75px;
+  }
+
+
+.portfolio {
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+.portfolio #portHeading{
+    padding: 40px;
+    margin-bottom: 0px;
+}
+
+.portfolio-container{
+    width: 1280px;
+    margin: 70px auto -75px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #f83606;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.box .imgBox{
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+}
+
+.box .imgBox img{
+    max-width: 100%;
+    transition: transform 2s;
+}
+
+.box:hover .imgBox img{
+    transform: scale(1.2);
+
+}
+
+.box .details{
+    position: absolute;
+    top: 220px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    align-items: center;
+    text-align: center;
+    background: rgba(0,0,0,.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+
+.box:hover .details{
+    transform: scaleY(1);
+
+}
+
+.box .details .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+
+.box .details .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color: #f83606;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+.box .details .content p{
+    margin: 10px 0 0;
+    padding: 0;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: left;
+}
+
+#portfolio-bottom{
+    padding-bottom: 75px;
+}
+
+
+section#contact {
+    width: auto;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    background-image: url('../ASSETS/matthew-oladele-hero2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#contact .section-heading {
+    color: #fff;
+    margin-top: -70px;
+}
+
+section#contact .form-group {
+    margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+    height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+    height: 236px;
+}
+
+section#contact .form-control:focus {
+    border-color: #f83606;
+    box-shadow: none;
+}
+
+section#contact::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact::-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact .text-danger {
+    color: #e74c3c;
+}
+
+#sendMessage{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 70px;
+}
+
+#sendMessage:hover{
+    color: rgb(26, 26, 26);
+}
+
+
+footer {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+div.social-buttons {
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+    position: absolute;
+    text-decoration: none;
+    justify-content: end;
+}
+
+div .social-buttons div a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer-main-div{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: rgb(17, 17, 17);
+    padding: 20px 0px;
+}
+
+.footer-social-icons{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.footer-social-icons ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.footer-social-icons ul li{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0px 5px;
+    border-radius: 100%;
+    background: #f83606;
+    text-align: center;
+}
+
+.footer-social-icons ul li:hover{
+    background: rgb(231, 231, 231);
+}
+
+.footer-social-icons ul li:hover a{
+    color: #f83606;
+}
+
+.footer-social-icons ul li a{
+    color: #272727;
+    font-size: 25px;
+}
+
+.footer-social-icons ul li a i{
+    line-height: 40px;
+}
+
+.footer-menu{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.footer-menu ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.footer-menu ul li{
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+.footer-menu ul li a{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(231, 231, 231);
+    text-decoration: none;
+    outline: none;
+    letter-spacing: 1px;
+}
+
+.footer-menu ul li a:hover{
+    color: #f83606;
+}
+
+.footer-bottom{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #f83606;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+.footer-bottom p{ 
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.footer-bottom p a{
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+}
+
+.footer-bottom p a:hover{
+    color: #272727;
+}
+
+
+#navbar-color{
+    background-color: white;
+}
+
+#navbar-menu a {
+    color: gray;
+}
+
+#navbar-menu a:hover {
+    color: #f83606;
+}
+
